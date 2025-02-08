@@ -190,7 +190,7 @@
           id="initialBalance"
           value="250000"
           step="any"
-          title="This is your starting investment amount and forms the foundation of your portfolio. A higher initial balance provides a greater base for compound growth and can significantly affect your overall returns. It is essential to consider how much capital you are comfortable investing for the long term. The value you choose will directly influence the scale of your future portfolio."
+          title="This is your starting investment amount and forms the foundation of your portfolio. A higher initial balance provides a greater base for compound growth and can significantly affect your overall returns. It is essential to consider how much capital you are comfortable investing for the long term. The value you choose will directly influence the scale of your future portfolio. Use this field to set your starting capital."
         />
 
         <label for="expectedCAGR">Expected CAGR (% per year):</label>
@@ -199,7 +199,7 @@
           id="expectedCAGR"
           value="25"
           step="any"
-          title="This parameter indicates your expected Compound Annual Growth Rate (CAGR) before adjustments for volatility. In the Recommended Mix scenario, it is preset to 25%, reflecting an aggressive growth expectation. A higher CAGR implies a more aggressive strategy, which can result in higher returns but also carries more risk. Consider how this rate aligns with your financial goals and risk tolerance over time."
+          title="This parameter indicates your expected Compound Annual Growth Rate (CAGR) before volatility adjustments. In the Recommended Mix scenario, it is preset to 25%, reflecting a moderately aggressive growth expectation. A higher CAGR suggests a higher potential return but also indicates increased risk. Consider whether this growth rate aligns with your investment goals and risk tolerance over time. This rate is fundamental in projecting your portfolio's future value."
         />
 
         <label for="yearlyCAGRChange"
@@ -210,7 +210,7 @@
           id="yearlyCAGRChange"
           value="-5"
           step="any"
-          title="This value represents the expected annual change in your CAGR. A negative change of –5% indicates that you expect your growth rate to gradually decline over time, possibly due to market saturation or increased competition. This parameter helps model the long-term evolution of your portfolio's growth. It is important to consider historical trends and future uncertainties when setting this value."
+          title="This value represents the anticipated annual change in your CAGR. A negative value of –5% means you expect the growth rate to decline gradually over time, possibly due to market maturity or other external factors. This parameter helps simulate a more realistic long-term growth scenario. It is important to reflect on how market conditions might change in the future. Adjust this value if you believe your growth rate will stabilize or increase instead."
         />
 
         <label for="years">Number of Years:</label>
@@ -218,7 +218,7 @@
           type="number"
           id="years"
           value="10"
-          title="This is the time horizon over which your investment will be simulated. A longer period allows for greater compound growth, though it also introduces more uncertainty. Your chosen duration should match your long-term financial goals, such as retirement planning. It is a crucial factor in determining the overall performance of your portfolio."
+          title="This is the duration for which the simulation will run. A longer time horizon allows for more significant compound growth, though it also increases the uncertainty of predictions. The chosen number of years should correspond with your long-term investment goals, such as retirement planning. This field sets the simulation’s overall time span."
         />
 
         <label for="volatility">Volatility (% adjustment on CAGR):</label>
@@ -227,7 +227,7 @@
           id="volatility"
           value="35"
           step="any"
-          title="Volatility measures the degree of fluctuation in your investment returns due to market uncertainty. A volatility of 35% in the Recommended Mix scenario reflects a moderately high level of risk. Higher volatility means your returns can vary widely from year to year, affecting the predictability of your portfolio’s growth. It is an important measure of risk that should be balanced with your growth expectations."
+          title="Volatility measures the degree of fluctuation in your investment returns due to market uncertainties. In the Recommended Mix scenario, it is set to 35%, indicating a moderately high level of risk. Higher volatility means your returns may vary significantly from year to year, affecting overall growth. This parameter is crucial for modeling realistic market behavior and risk exposure. Consider your comfort level with such fluctuations when setting this value."
         />
 
         <label for="yearlyVolatilityChange"
@@ -238,7 +238,7 @@
           id="yearlyVolatilityChange"
           value="-5"
           step="any"
-          title="This parameter indicates how you expect the market volatility to change annually. A negative value of –5% suggests that you expect the volatility to gradually decrease over time, potentially reflecting improved market stability. This can influence the overall risk of your portfolio. Adjust this parameter based on your outlook for market conditions in the future."
+          title="This parameter specifies how you expect the volatility to change annually. A negative value of –5% suggests that you anticipate a gradual decrease in volatility over time, potentially indicating increasing market stability. This can help temper the impact of extreme fluctuations as the simulation progresses. It is important to consider whether you expect the market risk to diminish or persist over time. Adjust this parameter based on your outlook."
         />
 
         <button id="toggleWD">Show Withdrawals and Deposits</button>
@@ -250,7 +250,7 @@
             id="monthlyWithdrawal"
             value="0"
             step="any"
-            title="This value sets the fixed monthly withdrawal from your portfolio. Regular withdrawals reduce the capital available for compounding, which may lower your final portfolio value. It is important if you require a steady cash flow from your investments. Consider your income needs versus your long-term growth objectives."
+            title="This field sets your fixed monthly withdrawal from the portfolio. Regular withdrawals reduce the capital that benefits from compounding, potentially lowering your final portfolio value. If you rely on investment income, set this value to meet your cash flow needs. Consider the trade-off between income now and growth later."
           />
 
           <label for="yearlyWithdrawalChange"
@@ -261,7 +261,7 @@
             id="yearlyWithdrawalChange"
             value="0"
             step="any"
-            title="This parameter adjusts your monthly withdrawal amount each year. A positive percentage means withdrawals will increase over time, reducing the funds available for growth. A negative percentage implies a decrease over time. Use this value to model changes in your cash flow requirements."
+            title="This parameter adjusts your monthly withdrawal amount each year. A positive percentage means withdrawals will increase over time, which can reduce your available capital for growth. A negative percentage means withdrawals will decrease. This setting helps simulate changes in your income needs over time."
           />
 
           <label for="withdrawalStartDelay"
@@ -272,7 +272,7 @@
             id="withdrawalStartDelay"
             value="0"
             min="0"
-            title="This specifies how many years you will wait before starting withdrawals. Delaying withdrawals allows your investment to compound longer, potentially leading to a higher portfolio value. Consider your short-term liquidity needs versus long-term growth. This decision can have a significant impact on the final outcomes."
+            title="Specify how many years to wait before beginning withdrawals. Delaying withdrawals allows your portfolio more time to compound, which can result in a higher final value. This is especially important if you don’t need immediate income from your investments. Balance your short-term liquidity needs against long-term growth."
           />
 
           <label for="monthlyDeposit">Monthly Deposit ($):</label>
@@ -281,7 +281,7 @@
             id="monthlyDeposit"
             value="0"
             step="any"
-            title="This field sets the amount you plan to contribute to your portfolio every month. Regular deposits increase your principal, enhancing the power of compounding returns. They are crucial if you intend to grow your investments continuously over time. Adjust this value based on your savings capacity and investment goals."
+            title="This field determines the amount you plan to add to your portfolio every month. Regular contributions increase the amount of capital that can grow over time through compounding. It is especially useful if you plan to invest consistently over a long period. Adjust this value based on your savings rate and financial goals."
           />
 
           <label for="yearlyDepositChange"
@@ -292,7 +292,7 @@
             id="yearlyDepositChange"
             value="0"
             step="any"
-            title="This parameter modifies your monthly deposit amount annually. A positive change indicates increasing contributions over time, which can accelerate growth. A negative change implies that your contributions will decrease over time. Use this setting to reflect anticipated changes in your income or saving strategy."
+            title="This parameter modifies your monthly deposit amount each year. A positive value means that your contributions will increase over time, accelerating growth. A negative value means that contributions will decrease. Set this based on your expectations for income growth or changes in your saving habits."
           />
 
           <label for="depositEndDelay">Deposit End Delay (years):</label>
@@ -301,7 +301,7 @@
             id="depositEndDelay"
             value="0"
             min="0"
-            title="This value defines the number of years during which you will make monthly deposits. After this period, no additional contributions will be made, and your portfolio growth will depend solely on returns. This setting helps simulate life events such as retirement. Choose a duration that aligns with your personal financial plans."
+            title="This defines the number of years during which you will continue making monthly deposits. After this period, no further contributions are made, and the portfolio grows only from returns. This setting helps simulate real-life scenarios like retirement. Choose a duration that matches your investment plan."
           />
 
           <label
@@ -316,7 +316,7 @@
 
         <!-- New Rainy Day Fund inputs -->
         <label
-          title="Enabling this option allocates a portion of your portfolio to a safer, lower-risk account to protect against market downturns."
+          title="Enabling this option allocates a portion of your portfolio to a safer, lower-risk account for emergencies."
         >
           <input type="checkbox" id="enableRainyDayFund" />
           Enable Rainy Day Fund
@@ -329,7 +329,7 @@
           id="rainyDayFundPercentage"
           value="2"
           step="any"
-          title="This value determines the percentage of your total portfolio that will be reserved as a safety net. A higher allocation increases financial security but may reduce overall growth potential. It is important to balance risk and liquidity needs. Adjust this value based on your personal risk tolerance and financial goals."
+          title="This value sets the percentage of your total portfolio that will be reserved as a safety net. A higher allocation increases protection but may limit growth. Consider your risk tolerance and need for liquidity when setting this value."
         />
         <label for="yearlyRainyDayFundChange">
           Yearly Change in Rainy Day Fund Allocation (% per year):
@@ -339,7 +339,7 @@
           id="yearlyRainyDayFundChange"
           value="5"
           step="any"
-          title="This parameter adjusts the percentage of your portfolio allocated to the Rainy Day Fund on an annual basis. A positive value increases the allocation over time, offering more security but potentially limiting growth. A negative value decreases the allocation. Use this to simulate a shifting risk profile in your portfolio."
+          title="This parameter adjusts the allocation to the Rainy Day Fund annually. A positive change increases the reserved portion over time, providing additional safety but possibly reducing growth potential. A negative change does the opposite. Set this based on how you expect your risk profile to evolve."
         />
 
         <label for="numSimulations">Number of Simulations:</label>
@@ -347,7 +347,7 @@
           type="number"
           id="numSimulations"
           value="10000"
-          title="This sets the number of simulation runs. More simulations provide a more statistically reliable picture of potential outcomes, capturing a wide range of scenarios. However, a higher number may take longer to process. Choose a value that balances accuracy with performance."
+          title="This sets the number of simulation runs. More runs result in more statistically reliable outcomes but may take longer to process. Choose a balance between accuracy and performance."
         />
 
         <br />
@@ -813,55 +813,55 @@
       function displaySummary(summary) {
         var tableHTML = "";
         tableHTML +=
-          "<tr><th title='Total number of simulation runs performed. Each simulation represents a possible scenario under varying market conditions.'>Simulations</th><td>" +
+          "<tr><th title='Total number of simulation runs performed.'>Simulations</th><td>" +
           summary.simulations +
           "</td></tr>";
         tableHTML +=
-          "<tr><th title='Average final portfolio balance across all simulations. This value provides an overall estimate of your portfolio’s potential end-of-period wealth.'>Avg Final Balance</th><td>$" +
+          "<tr><th title='Average final portfolio balance.'>Avg Final Balance</th><td>$" +
           formatCurrency(summary.avgBalance, 2) +
           "</td></tr>";
         tableHTML +=
-          "<tr><th title='Median final portfolio balance; less affected by extreme values than the average.'>Median Final Balance</th><td>$" +
+          "<tr><th title='Median final portfolio balance.'>Median Final Balance</th><td>$" +
           formatCurrency(summary.medianBalance, 2) +
           "</td></tr>";
         tableHTML +=
-          "<tr><th title='25% below the median final balance, indicating the lower boundary of a likely outcome range.'>Lower 25% Range (Median - 25%)</th><td>$" +
+          "<tr><th title='25% below the median balance.'>Lower 25% Range (Median - 25%)</th><td>$" +
           formatCurrency(summary.medianBalance * 0.75, 2) +
           "</td></tr>";
         tableHTML +=
-          "<tr><th title='25% above the median final balance, indicating the upper boundary of a likely outcome range.'>Upper 25% Range (Median + 25%)</th><td>$" +
+          "<tr><th title='25% above the median balance.'>Upper 25% Range (Median + 25%)</th><td>$" +
           formatCurrency(summary.medianBalance * 1.25, 2) +
           "</td></tr>";
         tableHTML +=
-          "<tr><th title='The worst-case scenario final portfolio balance observed.'>Min Final Balance</th><td>$" +
+          "<tr><th title='Minimum final portfolio balance.'>Min Final Balance</th><td>$" +
           formatCurrency(summary.minBalance, 2) +
           "</td></tr>";
         tableHTML +=
-          "<tr><th title='The best-case scenario final portfolio balance observed.'>Max Final Balance</th><td>$" +
+          "<tr><th title='Maximum final portfolio balance.'>Max Final Balance</th><td>$" +
           formatCurrency(summary.maxBalance, 2) +
           "</td></tr>";
         tableHTML +=
-          "<tr><th title='Average overall compound annual growth rate (CAGR) derived from the simulations.'>Avg Overall CAGR</th><td>" +
+          "<tr><th title='Average overall CAGR.'>Avg Overall CAGR</th><td>" +
           (summary.avgCAGR * 100).toFixed(2) +
           "%</td></tr>";
         tableHTML +=
-          "<tr><th title='Median overall CAGR from the simulations.'>Median Overall CAGR</th><td>" +
+          "<tr><th title='Median overall CAGR.'>Median Overall CAGR</th><td>" +
           (summary.medianOverallCAGR * 100).toFixed(2) +
           "%</td></tr>";
         tableHTML +=
-          "<tr><th title='The worst-case overall CAGR observed.'>Min Overall CAGR</th><td>" +
+          "<tr><th title='Minimum overall CAGR.'>Min Overall CAGR</th><td>" +
           (summary.minOverallCAGR * 100).toFixed(2) +
           "%</td></tr>";
         tableHTML +=
-          "<tr><th title='The best-case overall CAGR observed.'>Max Overall CAGR</th><td>" +
+          "<tr><th title='Maximum overall CAGR.'>Max Overall CAGR</th><td>" +
           (summary.maxOverallCAGR * 100).toFixed(2) +
           "%</td></tr>";
         tableHTML +=
-          "<tr><th title='Relative standard deviation of final balances, a measure of variability and risk.'>Balance Rel Std Dev</th><td>" +
+          "<tr><th title='Relative standard deviation of final balances.'>Balance Rel Std Dev</th><td>" +
           summary.relativeStdDev.toFixed(2) +
           "%</td></tr>";
         tableHTML +=
-          "<tr><th title='Average final balance of the Rainy Day Fund across simulations.'>Avg Rainy Day Fund</th><td>$" +
+          "<tr><th title='Average final balance of the Rainy Day Fund.'>Avg Rainy Day Fund</th><td>$" +
           formatCurrency(summary.rainyDayAvg, 2) +
           "</td></tr>";
         tableHTML +=
@@ -869,15 +869,15 @@
           formatCurrency(summary.medianRainyDayFund, 2) +
           "</td></tr>";
         tableHTML +=
-          "<tr><th title='Worst-case final balance of the Rainy Day Fund.'>Min Rainy Day Fund</th><td>$" +
+          "<tr><th title='Minimum final balance in the Rainy Day Fund.'>Min Rainy Day Fund</th><td>$" +
           formatCurrency(summary.rainyDayMin, 2) +
           "</td></tr>";
         tableHTML +=
-          "<tr><th title='Best-case final balance of the Rainy Day Fund.'>Max Rainy Day Fund</th><td>$" +
+          "<tr><th title='Maximum final balance in the Rainy Day Fund.'>Max Rainy Day Fund</th><td>$" +
           formatCurrency(summary.rainyDayMax, 2) +
           "</td></tr>";
         tableHTML +=
-          "<tr><th title='Average number of years with negative CAGR, indicating periods of decline.'>Avg Negative Years</th><td>" +
+          "<tr><th title='Average number of years with negative CAGR.'>Avg Negative Years</th><td>" +
           summary.avgNegYears.toFixed(2) +
           "</td></tr>";
         tableHTML +=
@@ -990,7 +990,7 @@
           ctx.stroke();
           ctx.fillText(year, x, margin.top + graphHeight + 5);
         }
-        // Y-axis tick labels (14px)
+        // Y-axis tick labels using abbreviated numbers (14px)
         ctx.textAlign = "right";
         ctx.textBaseline = "middle";
         ctx.font = "14px Arial";
@@ -1002,11 +1002,7 @@
           ctx.moveTo(margin.left - 5, y);
           ctx.lineTo(margin.left, y);
           ctx.stroke();
-          ctx.fillText(
-            "$" + formatCurrency(balanceTick, 0),
-            margin.left - 7,
-            y
-          );
+          ctx.fillText("$" + abbreviateNumber(balanceTick), margin.left - 7, y);
         }
 
         // Draw curves (final point labels in 17px)
@@ -1046,7 +1042,7 @@
       }
 
       // Updated drawBarGraph to include only four bars (Min, Median, Max, Avg)
-      // and to display abbreviated numbers.
+      // with abbreviated numbers and with category labels placed comfortably above the bars.
       function drawBarGraph(avg, min, max, median) {
         var canvas = document.getElementById("barGraph");
         if (!canvas) return;
@@ -1132,8 +1128,8 @@
             x + barWidth / 2,
             y - 5
           );
-          // Place the category label 30px above the bar top.
-          var labelY = Math.max(y - 30, margin.top + 5);
+          // Increase the offset to 40px so labels appear comfortably above the bar.
+          var labelY = Math.max(y - 40, margin.top + 5);
           ctx.fillText(item.label, x + barWidth / 2, labelY);
         });
       }
